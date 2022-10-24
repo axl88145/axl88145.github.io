@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    font-family: 'Mulish', sans-serif;
+}
+header{
+    min-height: 20px;
+    padding: 20px;
+    margin: auto;
+    
+}
+#logo{
+    max-width: 50%;
+}
+main{
+    margin: 0 auto;
+    padding-left: 5em;
+    padding-right: 5em;
+    
+}
+main img{
+    width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+.headernav{
+    text-align: right;
+}
+    .headernav ul{ /*ul contains the listed items*/
+        margin: 1em auto;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    nav li{
+        list-style-type: none; /*removes bullet points*/
+        display: inline-block; /* displays list horizontally*/
+        
+    }
+    .headernav li a{
+        display: inline-block;
+        padding: 10px 20px; /*better to put padding on the hyperlink*/
+        border-radius: 12px;
+    }
+    .headernav a:hover {
+        background-color: #da3556;
+        color: white;
+    }
+        /*to make buttons light up on same page*/
+        #home .headernav li:nth-child(1) a{
+            font-weight: bold;
+            background-color: #B22B46;
+            color: white;
+        }
+        #about .headernav li:nth-child(2) a{
+            font-weight: bold;
+            background-color: #B22B46;
+            color: white;
+        }#instructions .headernav li:nth-child(3) a{
+            font-weight: bold;
+            background-color: #B22B46;
+            color: white;
+        }
+
+.stepnav{
+    text-align: center;
+}
+.stepnav ul{
+    text-align: center;
+}
+.stepnav li{
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.stepnav li a{
+    background-color: #D6A521;
+    display: inline-block;
+    padding: 15px 20px; /*better to put padding on the hyperlink*/
+    border-radius: 12px;
+}
+.stepnav a:hover {
+    background-color: #f6bf27;
+}
+    #preparations .stepnav li:nth-child(1) a{
+        background-color: transparent;
+        color: #0E6F1E;
+    }
+    #step1 .stepnav li:nth-child(2) a{
+        background-color: transparent;
+        color: #0E6F1E;
+    }
+    #step2 .stepnav li:nth-child(3) a{
+        background-color: transparent;
+        color: #0E6F1E;
+    }
+    #step3 .stepnav li:nth-child(4) a{
+        background-color: transparent;
+        color: #0E6F1E;
+    }
+    #step4 .stepnav li:nth-child(5) a{
+        background-color: transparent;
+        color: #0E6F1E;
+        
+    }
+    #step5 .stepnav li:nth-child(6) a{
+        background-color: transparent;
+        color: #0E6F1E;
+    }
+
+/*two main columns*/
+.equal-columns{
+    display: flex;
+}
+.equal-columns > div{
+    flex-basis: 100%;
+}
+
+/*left column*/
+main .left-column{
+    padding-top: 5%;
+    padding-right: 10%;
+}
+    /*left and right buttons*/
+    .leftrightnav{
+        display: flex;
+    }
+    .leftrightnav > div{
+        flex-basis: 100%;
+    }
+        /*2 buttons*/
+        .leftrightnav > .leftbutton > a{
+            display: inline-block;
+            background-color: #D6A521;
+            padding: 20px 30px;
+            color: black;
+            margin-top: 5em;
+            border-radius: 12px;
+        }
+        .leftbutton a:hover {
+            background-color: #f6bf27;
+        }
+        .leftrightnav > .rightbutton > a{
+            display: inline-block;
+            background-color: #D6A521;
+            padding: 20px 30px;
+            color: black;
+            margin-top: 5em;
+            border-radius: 12px;
+        }
+        .rightbutton a:hover {
+            background-color: #f6bf27;
+        }
+        /*right button*/
+        .rightbutton{
+            text-align: right;
+        }
+    /*left column list*/
+    .list-columns{
+        display: flex;
+    }
+    .list-columns > div{
+        flex-basis: 100%;
+    }
+/*right column*/
+main .right-column{
+    max-width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+h1, h2{
+    font-family: 'Baloo 2',sans-serif;
+    color: #0E6F1E;
+}
+p, ol, ul{
+    line-height: 2em;
+    font-weight: bold;
+}
+ol, ul{
+    margin-top: 0;
+}
+/*or 768px for tablets*/
+/*320px is smallest phone*/
+/*for class, just make figmas for 1440 and 320 only*/
+@media (max-width: 768px){
+    main{
+        width: calc(100% - 4em); 
+    }
+    #intro{
+        /*removes the section on smaller screen*/
+        /*only use if cant fit on small screen*/
+        display: none;
+    }
+    .equal-columns{
+        /*makes it all rows, no more columns*/
+        flex-direction: column;
+    }
+}
+
