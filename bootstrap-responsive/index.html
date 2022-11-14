@@ -22,15 +22,59 @@
       }
       .row > div{
         background-color: aquamarine;
-        border: solid green 1px;
-        
+        border: solid green 1px; 
       }
       
-
+      #primary-nav{
+          overflow: hidden;
+          text-align: center;
+      }
+      #primary-nav ul{ /*ul contains the listed items*/
+          margin: 0;
+          padding: 0;
+      }
+      #primary-nav li{
+          list-style-type: none; /*removes bullet points*/
+          display: inline-block; /* displays list horizontally*/
+          background-color: lightblue;
+      }
+      /*hamburger*/
+      #toggle-nav{
+        display: none;
+        background-color: blueviolet;
+        outline: none;
+        border-color: aqua;
+      }
+        /* This media query defines how the page displays beneath a breakpoint */
+      @media (max-width: 767px){
+        #toggle-nav{
+          display: block; /* display button beneath breakpoint */
+        }
+        #primary-nav{
+          max-height: 0;
+        }
+        #primary-nav li{
+          display: block;
+          text-align: left;
+        }
+        /* Here, we override the rule when the body has a class of nav-open */
+        body.nav-open #primary-nav{
+          max-height: 400px;
+        }
+      }
     </style>
+   
     <title>Hello, world!</title>
   </head>
   <body>
+    <button id="toggle-nav">&#9776</button>
+    <nav id="primary-nav">
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
     <h1>Hello, world!</h1>
     <div class="container">
         <div class="row">
@@ -49,6 +93,19 @@
         </div>
     </div>
     
+    <script>
+      // Perform this after the window has loaded
+        window.onload = function() {
+            // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+            let toggleNav = document.getElementById('toggle-nav');
 
+            // Tell button to do something on click
+            toggleNav.addEventListener('click', function(){
+
+              // toggle the body's class attribute
+              document.body.classList.toggle('nav-open');
+            });
+          };
+    </script>
   </body>
 </html>
