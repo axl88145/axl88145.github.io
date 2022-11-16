@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <!--my styles-->
+    <link rel="stylesheet" href="../style/style.css">
+   
+    <title>About the Author - Don Quixote</title>
+  </head>
+  <body id="author">
+    <div class="container" id="header"> <!--Header-->
+      <div class="row">
+        <div class="col"> <!--logo-->
+          <a href="../index.html"><img id="logo" src="../images/don-quixote-logo.svg" alt="Don Quixote logo"></a>
+        </div>
+        <div class="col-8 mobile-right"> <!--nav-->
+          <!--<img id="toggle-nav">&#9776</button>-->
+          <img id="toggle-nav" src="../images/hamburger.svg" alt="hamburger">
+          <nav id="primary-nav">
+            <ul>
+              <li><a href="../the-book/index.html">The Book</a></li>
+              <li><a href="index.html">About the Author</a></li>
+              <li><a href="../books-by-the-author/index.html">Books from the Author</a></li>
+              <li><a href="../buy-now/index.html">Buy Now</a></li>
+            </ul>
+          </nav>
+        </div>  
+      </div>   
+    </div>
+
+    <main>
+
+    <div class="container" id="third-section">
+      <div class="row">
+        <div class="col-sm-6 leftcolumn">
+          <h2>Miguel de Cervantes</h2>
+          <p>Born in Spain in the year 1547, Miguel de Cervantes lived a life of adventure. He lived in states of poverty, joined the military, traveled to Rome, and was kidnapped by Barbary pirates.</p>
+          <p>After returning to Spain, he wrote many novels, poems and plays. His most acclaimed was the novel, Don Quixote, which has influenced many writers since then. He died in the year 1616.</p>
+          <div class="button">
+            <a href="../books-by-the-author/index.html">Books by Cervantes</a>
+          </div>
+        </div>
+        <div class="col-sm-6 rightcolumn"> 
+          <picture>
+              <source media="(max-width: 767px)" srcset="../images/miguel-de-cervantes-150.jpg">
+              <img src="../images/miguel-de-cervantes-400.jpg" alt="image of Miguel de Cervantes">
+          </picture>
+        </div>
+      </div>
+    </div>
+    
+    </main>
+    
+    <script>
+      // Perform this after the window has loaded
+        window.onload = function() {
+            // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+            let toggleNav = document.getElementById('toggle-nav');
+
+            // Tell button to do something on click
+            toggleNav.addEventListener('click', function(){
+
+              // toggle the body's class attribute
+              document.body.classList.toggle('nav-open');
+            });
+          };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+h1, h2, h3{
+    font-family: 'Inika', serif;
+    color: #E6BB00;
+}
+h5{
+    font-family: 'Jost', sans-serif;
+    color: white;
+    margin-top: 1em;
+}
+p{
+    font-family: 'Jost', sans-serif;
+    color: white;
+    line-height: 200%;
+    margin-top: 1em;
+}
+.button{
+    margin-top: 3em;
+}
+.button a{
+    font-family: 'Inika', serif;
+    padding: 10px 20px;
+    background-color: #EBF095;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+.button a:hover {
+    background-color: #ffffff;
+}
+
+
+/*
+main{
+    max-width: 1440px;
+}
+*/
+
+body img{
+    max-width: 70%;
+    max-height: auto;
+    padding: 10%;
+}
+
+
+
+#header{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-bottom: .7em solid #7A4C02;
+    
+}
+
+main .container{
+    border-bottom: .7em solid #7A4C02;
+}
+
+.row > .leftcolumn{
+    background-color: #024078;
+    padding: 10%;
+    margin: 0;
+}
+.row > .rightcolumn{
+    background-color: #C7DEF2;
+    text-align: center;
+    margin: 0;
+}
+
+#first-section{
+
+    text-align: center;
+}
+
+.reviews{
+    padding: 5%;
+}
+.reviews > h2{
+    color: black;
+}
+.reviews > p{
+    color: black;
+}
+
+#buy-now .button{
+    margin-top: 2em;
+}
+
+/*Logo*/
+#header img{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*nav section*/
+
+#primary-nav{
+    overflow: hidden;
+    text-align: right;
+}
+
+#primary-nav ul{ /*ul contains the listed items*/
+    margin: 0;
+    padding: 0;
+}
+
+#primary-nav li{
+    list-style-type: none; /*removes bullet points*/
+    display: inline-block; /* displays list horizontally*/
+    margin: 0;
+    padding: 0;
+}
+#primary-nav li a{
+    padding: 10px 20px; /*better to put padding on the hyperlink*/
+    text-decoration: none;
+    
+    font-size: large;
+    color: black;
+    font-family: 'Inika', serif;
+}
+#primary-nav a:hover {
+    color: #541919;
+}
+
+/*hamburger*/
+#toggle-nav{
+    display: none;
+    max-width: 3.5em;
+    margin: 0;
+}
+
+/*active nav buttons*/
+#the-book #primary-nav li:nth-child(1) a{
+    color: #541919;
+    text-decoration: underline;
+}
+#author #primary-nav li:nth-child(2) a{
+    color: #541919;
+    text-decoration: underline;
+}
+#other-books #primary-nav li:nth-child(3) a{
+    color: #541919;
+    text-decoration: underline;
+}
+#buy-now #primary-nav li:nth-child(4) a{
+    color: #541919;
+    text-decoration: underline;
+}
+
+
+
+/* This media query defines how the page displays beneath a breakpoint */
+@media (max-width: 767px){
+    #toggle-nav{
+        display: block; /* display button beneath breakpoint */
+        position: absolute;
+        right: 0;
+    }
+    #primary-nav{
+        max-height: 0;
+        padding: 0%;
+        border-left: 1px solid black;
+    }
+    #primary-nav li{
+        display: block;
+        text-align: left;
+    }
+    #primary-nav li a{
+        font-size: 95%;
+    }
+
+    /* Here, we override the rule when the body has a class of nav-open */
+    body.nav-open #primary-nav{
+        max-height: 400px;
+    }
+    .mobile-right{
+        position: relative;
+    }
+    
+}
