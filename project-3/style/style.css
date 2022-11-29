@@ -42,7 +42,7 @@ header{
 }
 main{
     max-width: 1440px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 
