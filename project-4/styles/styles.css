@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    
+    
+}
+
+#header{
+    max-width: 1440px;
+    margin: 0 auto;
+    background: radial-gradient(white, blanchedalmond);
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    background: radial-gradient(white, blanchedalmond);
+}
+#footer{
+    max-width: 1440px;
+    background: radial-gradient(white, blanchedalmond);
+}
+
+h3{
+    font-weight: 400;
+}
+
+.leading{
+    margin-top: 2em;
+}
+
+img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+/* Body Buttons */
+    .button{
+        margin-top: 3em;
+    }
+    .button a{
+        padding: 10px 10px;
+        border: solid 2pt black;
+        text-align: center;
+        font-size: large;
+        text-decoration: none;
+        color: black;
+    }
+    .button a:hover {
+        background-color: #ffffff;
+    }
+    #coffee-section .button a:hover {
+        background-color: black;
+    }
+
+/* Frames */
+    .top-frame{
+        margin-bottom: -3em;
+    }
+    .bottom-frame{
+        margin-top: -3em;
+    }
+    /* frame corners*/
+        .corner{
+            max-width: 15%;
+        }
+        #topleftcorner{
+            margin-left: 1em;
+            margin-top: 2em;
+        }
+        #toprightcorner{
+            transform: scaleX(-1);
+            margin-right: 1em;
+            margin-top: 2em;
+        }
+        #bottomleftcorner{
+            transform: scaleY(-1);
+            margin-left: 1em;
+            margin-bottom: 2em;
+        }
+        #bottomrightcorner{
+            transform: rotate(3.142rad);
+            margin-right: 1em;
+            margin-bottom: 2em;
+        }
+    /*columns*/
+        
+        .top-right-frame{
+            text-align: right;
+        }
+       
+        .bottom-right-frame{
+            text-align: right;
+        }
+/*Logo*/
+#logo-row{
+    text-align: center;
+}
+#logo{
+    max-width: 15%;
+}
+/* main */
+    main > .container{
+        margin-bottom: 2em;
+    }
+    #footer{
+        margin-top: -2em;
+    }
+
+#paint-section-1{
+    background-color: #D8B582;
+}
+#paint-section-1 .tree-image{
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: auto;
+    
+    object-fit:contain;
+}
+#coffee-section{
+    text-align: center;
+    background-color: #42371D;
+}
+#coffee-section .coffee-image{
+    margin: 0 auto;
+    max-width: none;
+    max-height: none;
+    height: 300px;
+    width: 3000px;
+    object-fit: cover;
+}
+#coffee-section .leftcolumn{
+    text-align: left;
+    color: #ffffff;
+}
+
+#coffee-section .button a{
+    color: #ffffff;
+    border: solid 2pt white;
+    padding: 10px 20px;
+}
+
+.leftcolumn{
+    padding: 2em;
+}
+
+/* Footer */
+.footer-text{
+    text-align: center;
+    padding-top: 1em;
+}
+.footer-text > h5, h6{
+    line-height: 2em;
+    font-weight: 400;
+}
+.footer-text > h5{
+    font-weight: 500;
+    margin-top: 1.5em;
+}
+hr.footer-line{
+  border: 2pt solid black;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+/*nav section*/
+#primary-nav{
+    overflow: hidden;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#primary-nav ul{ /*ul contains the listed items*/
+    margin: 0;
+    padding: 0;
+}
+
+#primary-nav li{
+    list-style-type: none; /*removes bullet points*/
+    display: inline-block; /* displays list horizontally*/
+    margin: 0;
+    padding: 0;
+}
+#primary-nav li a{
+    padding: 10px 20px; /*better to put padding on the hyperlink*/
+    text-decoration: none;
+    font-size: large;
+    color: black;
+   
+}
+#primary-nav a:hover {
+    color: white;
+    background-color: #42371D;
+    border-radius: 30%;
+    
+}
+
+/*active nav buttons*/
+#menu-page #primary-nav li:nth-child(1) a{
+    color: white;
+    background-color: #42371D;
+    border-radius: 30%;
+}
+#events-page #primary-nav li:nth-child(2) a{
+    color: white;
+    background-color: #42371D;
+    border-radius: 30%;
+}
+#hours-location-page #primary-nav li:nth-child(3) a{
+    color: white;
+    background-color: #42371D;
+    border-radius: 30%;
+}
+#contact-page #primary-nav li:nth-child(4) a{
+    color: white;
+    background-color: #42371D;
+    border-radius: 30%;
+}
+
+/*hamburger*/
+#toggle-nav{
+    display: none;
+    max-width: 3.5em;
+}
+
+
+/* This media query defines how the page displays beneath a breakpoint */
+@media (max-width: 767px){
+    #toggle-nav{
+        display: block; /* display button beneath breakpoint */
+        position: absolute;
+        right: 75px;
+        top: -30px;
+        cursor: pointer;
+        
+    }
+    #primary-nav{
+        max-height: 0;
+        padding: 0%;
+        border-left: 3px solid black;
+        border-radius: 10px;
+        padding-left: 1em;
+    }
+    #primary-nav li{
+        display: block;
+        text-align: left;
+    }
+    #primary-nav li a{
+        font-size: 95%;
+    }
+
+    /* Here, we override the rule when the body has a class of nav-open */
+    body.nav-open #primary-nav{
+        max-height: 400px;
+    }
+    .mobile-right{
+        position: relative;
+    }
+
+
+    #primary-nav li a{
+        padding: 2px 5px; /*better to put padding on the hyperlink*/
+        text-decoration: none;
+        font-size: large;
+        color: black;
+       
+    }
+    #primary-nav a:hover {
+        color: white;
+        background-color: #42371D;
+        border-radius: 10%;
+        
+    }
+
+    
+    .vertical-rule{
+        display: none;
+    }
+    
+    .corner{
+        max-width: 30%;
+    }
+    #logo{
+        max-width: 25%;
+       
+    }
+    .button{
+        text-align: center;
+    }
+   
+
+    
+    .top-frame{
+        margin-bottom: -3em;
+    }
+    .bottom-frame{
+        margin-top: 0;
+    }
+    #topleftcorner{
+        margin-left: 0em;
+        margin-top: 1em;
+    }
+    #toprightcorner{
+        
+        margin-right: 0em;
+        margin-top: 1em;
+    }
+    #bottomleftcorner{
+        
+        margin-left: 0em;
+        margin-bottom: 1em;
+    }
+    #bottomrightcorner{
+        margin-right: 0em;
+        margin-bottom: 1em;
+    }
+}
