@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            width: 620px;
+            margin: 3em auto;
+            background-color: aqua;
+        }
+        .grid{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .grid > div{
+            background-color: #ccc;
+            height: 100px;
+            flex: 1 1 100px;
+        }
+        img{
+            max-width: 100%;
+            max-height: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Gallery Example</h1>
+        <div class="grid">
+            <div><img src="images/banana-nut-muffin.jpg" alt=""></div>
+            <div><img src="images/blueberry-muffin.jpg" alt=""></div>
+            <div><img src="images/butter-croissant.jpg" alt=""></div>
+            <div><img src="images/chocalate-croissant.jpg" alt=""></div>
+            <div><img src="images/brownie.jpg" alt=""></div>
+            
+        </div>
+
+
+    </main>
+</body>
+</html>
