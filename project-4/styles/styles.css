@@ -1,17 +1,17 @@
 *{
     box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
-    
-    
 }
+
+
 
 body{
     background: radial-gradient(white, blanchedalmond);
 }
+
 #header{
     max-width: 1440px;
     margin: 0 auto;
-    
 }
 main{
     max-width: 1440px;
@@ -22,6 +22,7 @@ main{
     max-width: 1440px;
     
 }
+
 h1{
     margin: 0 auto;
     font-size: 35pt;
@@ -29,14 +30,14 @@ h1{
 
 h3{
     font-weight: 400;
-    
 }
 h4{
-    text-align: center;
     font-weight: 400;
-    border-bottom: 2px solid black;
-    width: 50%;
+    border-bottom: 100% solid black;
+    
 }
+
+
 
 .leading{
     margin-top: 2em;
@@ -52,7 +53,15 @@ img{
         padding: 10px 10px;
         border: solid 2pt black;
         text-align: center;
-        font-size: large;
+        font-size: 15pt;
+        text-decoration: none;
+        color: black;
+    }
+    main .button a{
+        padding: 15px 15px;
+        border: solid 2pt black;
+        text-align: center;
+        font-size: 15pt;
         text-decoration: none;
         color: black;
     }
@@ -67,8 +76,14 @@ img{
     }
     .leftcolumn .button{
         margin-top: 3em;
-        
     }
+    .rightcolumn .button{
+        margin-top: 3em;
+    }
+    .menu-button-mobile{
+        display: none;
+    }
+   
 
 /* Frames */
     .top-frame{
@@ -100,6 +115,7 @@ img{
             margin-right: 1em;
             margin-bottom: 2em;
         }
+
     /*columns*/
         
         .top-right-frame{
@@ -109,14 +125,18 @@ img{
         .bottom-right-frame{
             text-align: right;
         }
+
 /*Logo*/
-#logo-row{
-    text-align: center;
-}
-#logo{
-    max-width: 15%;
-}
+
+    #logo-row{
+        text-align: center;
+    }
+    #logo{
+        max-width: 15%;
+    }
+
 /* main */
+
     main > .container{
         margin-bottom: 2em;
     }
@@ -124,80 +144,83 @@ img{
         margin-top: -2em;
     }
 
+/* sections */
+    .px-0{
+        padding: 0;
+    }    
 
-.painting-section h3{
-    margin-top: 1em;
-}
-#paint-section-1{
-    background-color: #D8B582;
-}
-#paint-section-2{
-    background-color: #A37D42;
-}
-#paint-section-3{
-    background-color: #705842;
-    color: #ffffff;
-}
-#paint-section-3 .button a{
-    color: #ffffff;
-    border: solid 2pt white;
-    padding: 10px 10px;
-}
+    .leftcolumn{
+        padding: 2em;
+    }
+    .rightcolumn{
+        padding: 2em;
+    }
 
+    .painting-section h2{
+        margin: 0 auto;
+        font-size: 32pt;
+    }
+    .painting-section h3{
+        margin-top: 1em;
+    }
+    #paint-section-1{
+        background-color: #D8B582;
+    }
+    #paint-section-2{
+        background-color: #A37D42;
+    }
+    #paint-section-3{
+        background-color: #705842;
+        color: #ffffff;
+    }
+    #paint-section-3 .button a{
+        color: #ffffff;
+        border: solid 2pt white;
+        padding: 15px 15px;
+    }
 
-#coffee-section{
-    text-align: center;
-    background-color: #42371D;
-}
-#coffee-section .coffee-image{
-    margin: 0 auto;
-    max-width: none;
-    max-height: none;
-    height: 300px;
-    width: 3000px;
-    object-fit: cover;
-}
-#coffee-section .leftcolumn{
-    text-align: left;
-    color: #ffffff;
-}
-#coffee-section .button{
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-#coffee-section .button a{
-    color: #ffffff;
-    border: solid 2pt white;
-    padding: 10px 20px;
-}
+    
+    #coffee-section{
+        text-align: center;
+        background-color: #42371D;
+    }
+    #coffee-section .coffee-image{
+        margin: 0 auto;
+        max-width: none;
+        max-height: none;
+        height: 300px;
+        width: 3000px;
+        object-fit: cover;
+    }
+    #coffee-section .leftcolumn{
+        text-align: left;
+        color: #ffffff;
+    }
+    #coffee-section .button{
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+    #coffee-section .button a{
+        color: #ffffff;
+        border: solid 2pt white;
+        padding: 15px 30px;
+    }
 
-
-
-.menu-button-mobile{
-    display: none;
-}
-
-
-.leftcolumn{
-    padding: 2em;
-}
-.rightcolumn{
-    padding: 2em;
-}
 
 /* Footer */
-.footer-text{
-    text-align: center;
-    padding-top: 1em;
-}
-.footer-text > h5, h6{
-    line-height: 2em;
-    font-weight: 400;
-}
-.footer-text > h5{
-    font-weight: 500;
-    margin-top: 1.5em;
-}
+
+    .footer-text{
+        text-align: center;
+        padding-top: 1em;
+    }
+    .footer-text > h5, h6{
+        line-height: 2em;
+        font-weight: 400;
+    }
+    .footer-text > h5{
+        font-weight: 500;
+        margin-top: 1.5em;
+    }
 
 /* Rules */
 
@@ -208,9 +231,9 @@ img{
 
     .vl {
     border-left: 2px solid black;
-    height: 400px;
     margin-top: 2em;
     margin-bottom: 1em;
+    text-align: center;
     }
 
     .body-horizontal{
@@ -220,111 +243,174 @@ img{
 
     .top-rule-body{
         padding: 0;
+        margin-top: 1em;
     }
     .body-title{
         margin-top: .25em;
     }
 
 
+
 /*nav section*/
-#primary-nav{
-    overflow: hidden;
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
+    #primary-nav{
+        overflow: hidden;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
 
-#primary-nav ul{ /*ul contains the listed items*/
-    margin: 0;
-    padding: 0;
-}
+    #primary-nav ul{ /*ul contains the listed items*/
+        margin: 0;
+        padding: 0;
+    }
 
-#primary-nav li{
-    list-style-type: none; /*removes bullet points*/
-    display: inline-block; /* displays list horizontally*/
-    margin: 0;
-    padding: 0;
-}
-#primary-nav li a{
-    padding: 10px 20px; /*better to put padding on the hyperlink*/
-    text-decoration: none;
-    font-size: large;
-    color: black;
-   
-}
-#primary-nav a:hover {
-    color: white;
-    background-color: #42371D;
-    border-radius: 30%;
+    #primary-nav li{
+        list-style-type: none; /*removes bullet points*/
+        display: inline-block; /* displays list horizontally*/
+        margin: 0;
+        padding: 0;
+    }
+    #primary-nav li a{
+        padding: 10px 20px; /*better to put padding on the hyperlink*/
+        text-decoration: none;
+        font-size: large;
+        color: black;
     
-}
+    }
+    #primary-nav a:hover {
+        color: white;
+        background-color: #42371D;
+        border-radius: 30%;
+        
+    }
 
-#primary-nav li::after{
-    content: ' | ';
-}
+    #primary-nav li::after{
+        content: ' | ';
+    }
 
-#primary-nav li:last-child::after{
-    content: '';
-} 
+    #primary-nav li:last-child::after{
+        content: '';
+    } 
 
 /*active nav buttons*/
-#home #primary-nav li:nth-child(1) a{
-    color: white;
-    background-color: #42371D;
-    border-radius: 30%;
-}
-#menu-page #primary-nav li:nth-child(3) a{
-    color: white;
-    background-color: #42371D;
-    border-radius: 30%;
-}
-#events-page #primary-nav li:nth-child(5) a{
-    color: white;
-    background-color: #42371D;
-    border-radius: 30%;
-}
-#hours-location-page #primary-nav li:nth-child(7) a{
-    color: white;
-    background-color: #42371D;
-    border-radius: 30%;
-}
-#contact-page #primary-nav li:nth-child(9) a{
-    color: white;
-    background-color: #42371D;
-    border-radius: 30%;
-}
+    #home #primary-nav li:nth-child(1) a{
+        color: white;
+        background-color: #42371D;
+        border-radius: 30%;
+    }
+    #menu-page #primary-nav li:nth-child(2) a{
+        color: white;
+        background-color: #42371D;
+        border-radius: 30%;
+    }
+    #events-page #primary-nav li:nth-child(3) a{
+        color: white;
+        background-color: #42371D;
+        border-radius: 30%;
+    }
+    #hours-location-page #primary-nav li:nth-child(4) a{
+        color: white;
+        background-color: #42371D;
+        border-radius: 30%;
+    }
+    #contact-page #primary-nav li:nth-child(5) a{
+        color: white;
+        background-color: #42371D;
+        border-radius: 30%;
+    }
 
 /*hamburger*/
-#toggle-nav{
-    display: none;
-    max-width: 3.5em;
-}
+
+    #toggle-nav{
+        display: none;
+        max-width: 3.5em;
+    }
 
 
 /* This media query defines how the page displays beneath a breakpoint */
+
+@media (max-width: 663px){
+    #primary-nav li a{
+        padding: 1px 20px; /*better to put padding on the hyperlink*/
+        text-decoration: none;
+        font-size: large;
+        color: black;
+    }
+
+    #primary-nav a:hover {
+        color: white;
+        background-color: #42371D;
+        border-radius: 10%; 
+    }
+
+    /*active nav buttons*/
+    #home #primary-nav li:nth-child(1) a{
+        color: white;
+        background-color: #42371D;
+        border-radius: 10%;
+    }
+    #menu-page #primary-nav li:nth-child(2) a{
+        color: white;
+        background-color: #42371D;
+        border-radius: 10%;
+    }
+    #events-page #primary-nav li:nth-child(3) a{
+        color: white;
+        background-color: #42371D;
+        border-radius: 10%;
+    }
+    #hours-location-page #primary-nav li:nth-child(4) a{
+        color: white;
+        background-color: #42371D;
+        border-radius: 10%;
+    }
+    #contact-page #primary-nav li:nth-child(5) a{
+        color: white;
+        background-color: #42371D;
+        border-radius: 10%;
+    }
+    .col-mobile{
+        flex-basis: content;
+    }
+    h1, h2, h3, h4, h5{
+        text-align: center;
+    }
+    #about-logo{
+       text-align: center;
+    }
+    #about-logo img{
+        margin: 0 auto;
+    }
+
+    #less-margin{
+        margin: 0em;
+    }
+}
 
 @media (max-width: 576px){
     #toggle-nav{
         display: block; /* display button beneath breakpoint */
         position: absolute;
-        right: 75px;
-        top: -30px;
+        right: 90px;
+        top: -80px;
         cursor: pointer;
-        
+        font-size: 60pt;
     }
     #primary-nav{
         max-height: 0;
         padding: 0%;
         border-left: 3px solid black;
+        border-right: 3px solid black;
         border-radius: 10px;
-        padding-left: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 6em;
+        margin-right: 6em;
     }
     #primary-nav li{
         display: block;
-        text-align: left;
-    }
-    #primary-nav li a{
-        font-size: 95%;
+        text-align: center;
+        margin: .5em;
     }
 
     /* Here, we override the rule when the body has a class of nav-open */
@@ -341,7 +427,7 @@ img{
         text-decoration: none;
         font-size: large;
         color: black;
-       
+        
     }
     #primary-nav a:hover {
         color: white;
@@ -353,9 +439,14 @@ img{
         content: '';
     }
     
-    #logo{
-        max-width: 25%;
+    #logo-row{
+        text-align: left;
+        padding-left: 6em;
     }
+    #logo{
+        max-width: 35%;
+    }
+    
 
     /* buttons */
         .button{
@@ -367,6 +458,13 @@ img{
         .menu-button-desktop{
             display: none;
         }
+        #coffee-section .button{
+            margin-top: 2.5em;
+            margin-bottom: 1em;
+        }
+    
+    /* rules */
+      
 
     /* frames */
         

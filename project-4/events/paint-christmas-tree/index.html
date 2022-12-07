@@ -15,23 +15,44 @@
     <!--materials-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!--my styles-->
-    <link rel="stylesheet" href="styles/styles.css">
-   
-    <title>Laetus Café</title>
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <style>
+      
+      
+      .image-row img{
+        max-height: 500px;
+        background-color: aqua;
+        margin: 0 auto;
+        max-width: none;
+        max-height: none;
+        height: 500px;
+        width: 1140px;
+        object-fit: cover;
+        object-position: 0 1%;
+      }
+
+      .rightcolumn{
+        text-align: center;
+        padding: 4em;
+
+      }
+      
+    </style>
+    <title>Paint Night: Christmas Tree - Laetus Café</title>
   </head>
-  <body id="home">
+  <body id="events-page">
     <div class="container" id="header">
         <div class="row top-frame"> <!--Top frame elements-->
             <div class="col top-left-frame">
-                <img class="corner" id="topleftcorner" src="images/corner-frame-brown.svg" alt="">
+                <img class="corner" id="topleftcorner" src="../../images/corner-frame-brown.svg" alt="">
             </div>
             <div class="col top-right-frame">
-                <img class="corner" id="toprightcorner" src="images/corner-frame-brown.svg" alt="">
+                <img class="corner" id="toprightcorner" src="../../images/corner-frame-brown.svg" alt="">
             </div>
         </div>
         <div class="row">
             <div class="col" id="logo-row"> <!--logo-->
-                <a href="index.html"><img id="logo" src="images/primary-mark-color.svg" alt="Laetus Café main logo"></a>
+                <a href="../index.html"><img id="logo" src="../../images/primary-mark-color.svg" alt="Laetus Café main logo"></a>
             </div>
         </div>
         <div class="row">
@@ -40,11 +61,11 @@
               <span id="toggle-nav" class="material-symbols-outlined">menu</span>
               <nav id="primary-nav">
                 <ul>
-                  <li><a href="index.html">Home</a></li>               
-                  <li><a href="menu/index.html">Menu</a></li>                 
-                  <li><a href="events/index.html">Events</a></li>                 
-                  <li><a href="hours-and-location/index.html">Hours & Location</a></li>                 
-                  <li><a href="contact-us/index.html">Contact Us</a></li>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../menu/index.html">Menu</a></li>
+                    <li><a href="../../events/index.html">Events</a></li>
+                    <li><a href="../../hours-and-location/index.html">Hours & Location</a></li>
+                    <li><a href="../../contact-us/index.html">Contact Us</a></li>
                 </ul>
               </nav>
             </div>  
@@ -52,42 +73,39 @@
     </div>
 
     <main>
-    <div class="container painting-section" id="paint-section-1">
+      <div class="container top-rule-body">
+        <hr class="body-horizontal">
         <div class="row">
-          <div class="col-sm-7 leftcolumn">
+          <h1 class="body-title">Paint Night: Christmas Tree</h1>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 0em;" class="container image-row">
+        <div class="row">
+            <img class="tree-image" src="../../images/christmas-tree.png" alt="Christmas tree painting">
+        </div>
+      </div>
+
+      <div class="container painting-section" id="paint-section-1">
+        <div class="row">
+          <div class="col-sm-7 leftcolumn col-mobile">
             <h2>Paint Night: Christmas Tree</h2>
             <h3>December 3rd, 2022 <br>
                 7:00pm to 10:00pm</h3>
             <p class="leading">Join us to learn to paint a Christmas Tree!</p>
             <p>Grab your friends, families and collegues and let your creative side brew!</p>
+           
+          </div>
+          <div class="col-sm-5 rightcolumn col-mobile">
+            <h3>$20.00 per ticket</h3>
             <div class="button">
-              <a href="events/paint-christmas-tree/index.html">Learn More</a>
+              <a href="">Book Now</a>
             </div>
           </div>
-          <div class="col-sm-5 rightcolumn"> 
-            <img class="tree-image" src="images/christmas-tree.png" alt="Christmas tree painting">
-          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="container" id="coffee-section">
-      <div class="row"> <!--coffee image-->
-        <img class="coffee-image" src="images/coffee.png" alt="Row of coffee">
-      </div>
-      <div class="row"> <!--text and button-->
-        <div class="col-sm-8 leftcolumn">
-          <h3>Want to relax with a good cup of coffee? <br> Check out our menu!</h3>
-          <div class="button menu-button-mobile">
-            <a href="menu/index.html">Menu</a>
-          </div>
-        </div>
-        <div class="col-sm-4 rightcolumn menu-button-desktop"> 
-          <div class="button">
-            <a href="menu/index.html">Menu</a>
-          </div>
-        </div>
-      </div>
-    </div>
+      
 
     </main>
 
@@ -101,17 +119,15 @@
           <h6>(717) 293-5000</h6>
         </div>
       </div>
-      
       <div class="row bottom-frame"> <!--bottom frame elements-->
         <div class="col bottom-left-frame">
-            <img class="corner" id="bottomleftcorner" src="images/corner-frame-brown.svg" alt="">
+            <img class="corner" id="bottomleftcorner" src="../../images/corner-frame-brown.svg" alt="">
         </div>
         <div class="col bottom-right-frame">
-            <img class="corner" id="bottomrightcorner" src="images/corner-frame-brown.svg" alt="">
+            <img class="corner" id="bottomrightcorner" src="../../images/corner-frame-brown.svg" alt="">
         </div>
       </div>
     </div>
-    
-    <script src="javascript/javascript.js"></script>
+    <script src="../../javascript/javascript.js"></script>
   </body>
 </html>

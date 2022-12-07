@@ -35,37 +35,29 @@
 
       .button{
         text-align: center;
-
       }
-      #image-block-row{
-        background-color: red;
-        height: 200px;
-      }
-
-      #image-block-row{
-        margin: 0 auto;
-        max-width: none;
-        max-height: none;
-        height: 100px;
-        width: 1140px;
-        object-fit: cover;
-      }
+    
       .image-block{
         width: 20%;
         padding: 0%;
-        
+      }
+      
+      .coffee-tea-column{
+        margin: 0 auto;
+      }
+      .muffin-other-column{
+        margin: 0 auto;
       }
 
-      .grid{
-            display: flex;
-            flex-wrap: wrap;
-            
-        }
-        .grid > div{
-            background-color: #ccc;
-            height: 100px;
-            flex: 1 1 100px;
-        }
+      .drink-food-type{
+        border-bottom: 1px solid black;
+        text-align: center;
+      }
+      .menu-list li{
+        padding-left: 1em;
+      }
+
+   
 
     </style>
     <title>Menu - Laetus Café</title>
@@ -92,13 +84,9 @@
               <nav id="primary-nav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li class="vertical-rule">|</li>
                     <li><a href="../menu/index.html">Menu</a></li>
-                    <li class="vertical-rule">|</li>
                     <li><a href="../events/index.html">Events</a></li>
-                    <li class="vertical-rule">|</li>
                     <li><a href="../hours-and-location/index.html">Hours & Location</a></li>
-                    <li class="vertical-rule">|</li>
                     <li><a href="../contact-us/index.html">Contact Us</a></li>
                 </ul>
               </nav>
@@ -121,80 +109,96 @@
         <div class="row">
           <div class="col leftcolumn">
             <h2>Drinks</h2>
-              <div style="margin-top: 2em;" class="row">
+              <div style="margin-top: 2em;" class="row coffee-tea-column">
                 <div class="col">
-                  <h4>Coffee</h4>
-                  <p class="leading">
-                    Latte <br>
-                    Cappuccino <br>
-                    Coffee <br>
-                    Espresso shot <br>
-                    Americano <br>
-                    Macchiato <br>
-                    Mocha <br>
-                    Iced coffee <br>
-                    Iced macchiato <br>
-                    Iced mocha
-                  </p>
+                  <div class="drink-food-type">
+                    <h4>Coffee</h4>
+                  </div>  
+                  <ol class="menu-list leading">
+                    <li>Cappuccino</li>
+                    <li>Coffee</li>
+                    <li>Espresso shot</li>
+                    <li>Americano</li>
+                    <li>Macchiato</li>
+                    <li>Mocha</li>
+                    <li>Iced coffee</li>
+                    <li>Iced macchiato</li>
+                    <li>Iced mocha</li>
+                  </ol>
                 </div>
                 <div class="col">
-                  <h4>Tea</h4>
-                  <p class="leading">
-                    Chai tea <br>
-                    English breakfast tea <br>
-                    Earl grey tea <br>
-                    Black tea <br>
-                    Green tea <br>
-                  </p>
+                  <div class="drink-food-type">
+                    <h4>Tea</h4>
+                  </div>
+                  <ol start="10" class="menu-list leading">
+                    <li>Chai tea</li>
+                    <li>English breakfast tea</li>
+                    <li>Earl grey tea</li>
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                  </ol>
                 </div>
               </div>
-              <div class="button"><a href="#">Order Now</a>
-              </div>
+              <div class="button menu-button-mobile"><a href="#">Order Now</a></div>
           </div>
           <div class="vl"></div>
           <div class="col rightcolumn"> 
             <h2>Food</h2>
-              <div style="margin-top: 2em;" class="row">
+              <div style="margin-top: 2em;" class="row muffin-other-column">
                 <div class="col">
-                  <h4>Muffins</h4>
-                  <p class="leading">
-                    Chocolate chip muffin <br>
-                    Blueberry muffin <br>
-                    Pumpkin muffin
-                  </p>
+                  <div class="drink-food-type">
+                    <h4>Muffins</h4>
+                  </div>
+                  <ol start="15" class="menu-list leading">
+                    <li>Chocolate chip muffin</li>
+                    <li>Blueberry muffin</li>
+                    <li>Pumpkin muffin</li>
+                  </ol>
                 </div>
                 <div class="col">
-                  <h4>Other</h4>
-                  <p class="leading">
-                    Chocolate croissant <br>
-                    Butter croissant <br>
-                    Banana nut bread <br>
-                    Brownies
-                  </p>
+                  <div class="drink-food-type">
+                    <h4>Other</h4>
+                  </div>
+                  <ol start="18" class="menu-list leading">
+                    <li>Chocolate croissant</li>
+                    <li>Butter croissant</li>
+                    <li>Banana nut bread</li>
+                    <li>Brownies</li>
+                  </ol>
                 </div>
               </div>
-              <div class="button"><a href="#">Order Now</a>
-              </div>
+              <div class="button menu-button-mobile"><a href="#">Order Now</a></div>
           </div>
         </div>
     </div>
 
+    <div style="margin-bottom: 3em;"class="container menu-button-desktop">
+      <div class="row">
+        <div class="col">
+          <div class="button"><a href="#">Order Now</a></div>
+        </div>
+        <div class="col">
+          <div class="button"><a href="#">Order Now</a></div>
+        </div>
+      </div>
+    </div>
+
     <div class="container" id="image-block-row">
-      <div class="grid">  
+      <div class="row">
         <div class="image-block">
-          <img src="../images/blueberry-muffin.jpg" alt="">
+          <img src="../images/blueberry-muffin.png" alt="">
         </div>
         <div class="image-block">
-          <img src="../images/butter-croissant.jpg" alt="">
+          <img src="../images/butter-croissant.png" alt="">
         </div>
         <div class="image-block">
-          <img src="../images/banana-nut-muffin.jpg" alt="">
+          <img src="../images/banana-nut-muffin.png" alt="">
         </div>
         <div class="image-block">
-          <img src="../images/chocalate-croissant.jpg" alt="">
+          <img src="../images/chocalate-croissant.png" alt="">
         </div>
         <div class="image-block">
-          <img src="../images/brownie.jpg" alt="">
+          <img src="../images/brownie.png" alt="">
         </div>
       </div>  
     </div>
@@ -220,6 +224,6 @@
         </div>
       </div>
     </div>
-    <script src="javascript/javascript.js"></script>
+    <script src="../javascript/javascript.js"></script>
   </body>
 </html>
