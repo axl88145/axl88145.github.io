@@ -201,7 +201,11 @@ img{
         text-align: left;
         color: #ffffff;
     }
-    
+    #coffee-section .button{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
     #coffee-section .button a{
         color: #ffffff;
         border: solid 2pt white;
