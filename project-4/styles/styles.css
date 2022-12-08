@@ -6,21 +6,23 @@
 
 
 body{
-    background: radial-gradient(white, blanchedalmond);
+    background-color: #42371D;
 }
 
 #header{
     max-width: 1440px;
     margin: 0 auto;
+    background: radial-gradient(white, blanchedalmond);
 }
 main{
     max-width: 1440px;
     margin: 0 auto;
-    
+    background: radial-gradient(white, blanchedalmond);
 }
 #footer{
     max-width: 1440px;
-    
+    margin: 0 auto;
+    background: radial-gradient(white, blanchedalmond);
 }
 
 h1{
@@ -37,6 +39,9 @@ h4{
     
 }
 
+p{
+    font-size: larger;
+}
 
 
 .leading{
@@ -64,6 +69,7 @@ img{
         font-size: 15pt;
         text-decoration: none;
         color: black;
+        display:inline-block; /* prevents button squeezing */
     }
     .button a:hover {
         background-color: #ffffff;
@@ -139,6 +145,7 @@ img{
 
     main > .container{
         margin-bottom: 2em;
+        /*max-width: calc(100% - 30px);*/
     }
     #footer{
         margin-top: -2em;
@@ -206,6 +213,33 @@ img{
         padding: 15px 30px;
     }
 
+    .tree-event-page .image-row img{
+        height: 500px;
+        width: 1140px;
+        object-fit: cover;
+        object-position: 0 1%;
+    }
+
+    .santa-event-page .image-row img{
+        height: 500px;
+        width: 1140px;
+        object-fit: cover;
+        object-position: 0 20%;
+    }
+
+    .reindeer-event-page .image-row img{
+        height: 500px;
+        width: 1140px;
+        object-fit: cover;
+        
+    }
+    
+
+    .individual-event-page .rightcolumn{
+        text-align: center;
+        padding: 4em;
+    }
+
 
 /* Footer */
 
@@ -246,7 +280,8 @@ img{
         margin-top: 1em;
     }
     .body-title{
-        margin-top: .25em;
+        margin-top: .5em;
+        text-align: center;
     }
 
 
@@ -369,9 +404,11 @@ img{
         background-color: #42371D;
         border-radius: 10%;
     }
-    .col-mobile{
+    
+    #hours-location-page .col-mobile{
         flex-basis: content;
     }
+
     h1, h2, h3, h4, h5{
         text-align: center;
     }
@@ -384,6 +421,13 @@ img{
 
     #less-margin{
         margin: 0em;
+    }
+
+    /* rules */
+
+    hr.footer-line{
+        border: 1pt solid black;
+        max-width: 80%;
     }
 }
 
@@ -439,6 +483,8 @@ img{
         content: '';
     }
     
+    /* Logo */
+
     #logo-row{
         text-align: left;
         padding-left: 6em;
@@ -462,9 +508,11 @@ img{
             margin-top: 2.5em;
             margin-bottom: 1em;
         }
+        .individual-event-page .rightcolumn{
+            padding-top: 0em;
+        }
     
-    /* rules */
-      
+    
 
     /* frames */
         
@@ -495,6 +543,28 @@ img{
             margin-right: 0em;
             margin-bottom: 1em;
         }
+        
 
-    
+    /* images */
+        
+        .tree-event-page .image-row img{
+            height: 500px;
+            width: 1140px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .santa-event-page .image-row img{
+            height: 500px;
+            width: 1140px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .reindeer-event-page .image-row img{
+            height: 500px;
+            width: 1140px;
+            object-fit: cover;
+            object-position: center;
+        }
 }
