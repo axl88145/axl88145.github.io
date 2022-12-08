@@ -203,10 +203,7 @@ img{
         text-align: left;
         color: #ffffff;
     }
-    #coffee-section .button{
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-    }
+    
     #coffee-section .button a{
         color: #ffffff;
         border: solid 2pt white;
@@ -510,7 +507,10 @@ img{
         }
         .individual-event-page .rightcolumn{
             padding-top: 0em;
+            padding-bottom: 4em;
+            flex-basis: none;
         }
+       
     
     
 
