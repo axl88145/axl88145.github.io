@@ -193,8 +193,7 @@ img{
     }
     #coffee-section .coffee-image{
         margin: 0 auto;
-        max-width: none;
-        max-height: none;
+        
         height: 300px;
         width: 3000px;
         object-fit: cover;
