@@ -64,12 +64,13 @@ img{
     }
     main .button a{
         padding: 15px 15px;
-        border: solid 2pt black;
+        border: solid 4px black;
         text-align: center;
         font-size: 15pt;
         text-decoration: none;
         color: black;
         display:inline-block; /* prevents button squeezing */
+        border-radius: 10px;
     }
     .button a:hover {
         background-color: #ffffff;
@@ -142,10 +143,11 @@ img{
     }
 
 /* main */
-
+    
     main > .container{
         margin-bottom: 2em;
         /*max-width: calc(100% - 30px);*/
+        
     }
     #footer{
         margin-top: -2em;
@@ -162,7 +164,12 @@ img{
     .rightcolumn{
         padding: 2em;
     }
-
+    .painting-section{
+        border-radius: 20px;
+    }
+    .painting-section img{
+        border-radius: 20px;
+    }
     .painting-section h2{
         margin: 0 auto;
         font-size: 32pt;
@@ -190,12 +197,14 @@ img{
     #coffee-section{
         text-align: center;
         background-color: #42371D;
+        border-radius: 20px;
     }
     #coffee-section .coffee-image{
         margin: 0 auto;
         height: 300px;
         width: 3000px;
         object-fit: cover;
+        border-radius: 20px 20px 0 0;
     }
     #coffee-section .leftcolumn{
         text-align: left;
@@ -212,6 +221,11 @@ img{
         padding: 15px 30px;
     }
 
+    .art-image{
+        border-radius: 20px 20px 0 0;
+    }
+
+    
     .tree-event-page .image-row img{
         height: 500px;
         width: 1140px;
@@ -233,7 +247,6 @@ img{
         
     }
     
-
     .individual-event-page .rightcolumn{
         text-align: center;
         padding: 4em;
@@ -374,34 +387,34 @@ img{
     #primary-nav a:hover {
         color: white;
         background-color: #42371D;
-        border-radius: 10%; 
+        border-radius: 5px; 
     }
 
     /*active nav buttons*/
     #home #primary-nav li:nth-child(1) a{
         color: white;
         background-color: #42371D;
-        border-radius: 10%;
+        border-radius: 5px;
     }
     #menu-page #primary-nav li:nth-child(2) a{
         color: white;
         background-color: #42371D;
-        border-radius: 10%;
+        border-radius: 5px;
     }
     #events-page #primary-nav li:nth-child(3) a{
         color: white;
         background-color: #42371D;
-        border-radius: 10%;
+        border-radius: 5px;
     }
     #hours-location-page #primary-nav li:nth-child(4) a{
         color: white;
         background-color: #42371D;
-        border-radius: 10%;
+        border-radius: 5px;
     }
     #contact-page #primary-nav li:nth-child(5) a{
         color: white;
         background-color: #42371D;
-        border-radius: 10%;
+        border-radius: 5px;
     }
     
     #hours-location-page .col-mobile{
